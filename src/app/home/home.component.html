@@ -1,1 +1,39 @@
-<p>home works!</p>
+
+<div class="card text-center col-md-12 mx-auto my-4">
+  <table class="table caption-top">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Jour</th>
+        <th>Durée</th>
+        <th>Début</th>
+        <th>Fin</th>
+        <th>Activité</th>
+        <th>Salles</th>
+        <th>Enseignant</th>
+        <th>Code</th>
+        <th>Type</th>
+        <th>Formations</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let entry of data">
+        <td scope="row">{{ entry.id }}</td>
+        <td>{{ entry.jour }}</td>
+        <td>{{ entry.duree }}</td>
+        <td>{{ entry.debut }}</td>
+        <td>{{ entry.fin }}</td>
+        <td>{{ entry.activite }}</td>
+        <td>{{ entry.salle }}</td>
+        <td>{{ entry.enseignant }}</td>
+        <td>{{ entry.code }}</td>
+        <td>{{ entry.type }}</td>
+        <td>{{ entry.formations }}</td>
+      </tr>
+
+    </tbody>
+  </table>
+
+</div>
+
+
