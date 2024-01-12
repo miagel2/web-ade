@@ -25,13 +25,15 @@ import { RegisterComponent } from './auth/register/register.component';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { ApiService } from './services/api.service';
 import { HttpClientModule } from '@angular/common/http';
+import { EmploiComponent } from './emploi/emploi.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    EmploiComponent
   ],
   imports: [
     BrowserModule,
